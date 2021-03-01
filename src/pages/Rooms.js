@@ -1,8 +1,8 @@
+import Hero from "../components/Hero";
+
 const Rooms = () => {
     return ( 
-        <div>
-            hello from rooms
-        </div>
+        <Hero hero="roomsHero"/>
      );
 }
  
