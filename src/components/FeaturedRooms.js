@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { RoomContext } from '../context';
+import Loading from './Loading';
 
 class FeaturedRooms extends Component {
     static contextType = RoomContext;
@@ -9,6 +10,7 @@ class FeaturedRooms extends Component {
         return ( 
             <div>
                 Hello from FeaturedRooms
+                <Loading />
             </div>
          );
     }
