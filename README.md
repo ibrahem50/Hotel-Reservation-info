@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Hotel Reservation
+
+Allows the user to see enough information to book a room in the hotel using Reactjs, Hooks, ContextApi, Contentful headless CMS for data management and Netlify to host.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
