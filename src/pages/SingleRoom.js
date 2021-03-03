@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
-import Hero from '../components/Hero';
+//import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import { RoomContext } from "../context";
+import StyledHero from '../components/StyledHero'
 
 
 class SingleRoom extends Component {
@@ -41,13 +42,13 @@ class SingleRoom extends Component {
       const [main, ...defaultImages] = images;
       console.log(defaultImages);
     return (
-        <Hero hero='roomsHero'>
+        <StyledHero img={images[0]}>
             <Banner title={`${name} room`}>
                 <Link to='/rooms' className='btn-primary'>
                     back to rooms
                 </Link>
             </Banner>
-        </Hero>
+        </StyledHero>
     )
     }
 }
