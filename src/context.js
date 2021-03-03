@@ -1,5 +1,5 @@
 import React, { Component, createContext } from 'react';
-import items from './data';
+import {items} from './data';
 //import Client from './Contentful';
 export const RoomContext = createContext();
 export class RoomProvider extends Component {
