@@ -1,6 +1,6 @@
 import React, { Component, createContext } from 'react';
-//import items from './data';
-import Client from './Contentful';
+import items from './data';
+//import Client from './Contentful';
 export const RoomContext = createContext();
 export class RoomProvider extends Component {
     state = { 
@@ -19,7 +19,7 @@ export class RoomProvider extends Component {
         pets: false
     };
     //getData
-    getData = async () => {
+    /*getData = async () => {
        try {
          let response = await Client.getEntries({
            content_type: "hotelReservation"
@@ -43,8 +43,8 @@ export class RoomProvider extends Component {
      };
     componentDidMount(){
         this.getData()
-    }
-    /*componentDidMount(){
+    }*/
+    componentDidMount(){
         //this.getData
         let rooms = this.formatData(items);
         let featuredRooms = rooms.filter(room => room.featured === true );
@@ -59,7 +59,7 @@ export class RoomProvider extends Component {
             maxPrice,
             maxSize
         })
-    };*/
+    };
 
     formatData (items){
         let tempItems = items.map(item => {
